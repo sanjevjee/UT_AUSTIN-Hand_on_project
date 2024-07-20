@@ -1,0 +1,2402 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>b9ef9ceb4cc844bf87cce388febeea0b</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="project-python-foundations-foodhub-data-analysis"
+class="cell markdown" id="Gc8x8QimJY_H">
+<h1>Project Python Foundations: FoodHub Data Analysis</h1>
+<p><strong>Marks: 60</strong></p>
+</section>
+<div class="cell markdown" id="NqikjkWwJY_L">
+<h3 id="context">Context</h3>
+<p>The number of restaurants in New York is increasing day by day. Lots
+of students and busy professionals rely on those restaurants due to
+their hectic lifestyles. Online food delivery service is a great option
+for them. It provides them with good food from their favorite
+restaurants. A food aggregator company FoodHub offers access to multiple
+restaurants through a single smartphone app.</p>
+<p>The app allows the restaurants to receive a direct online order from
+a customer. The app assigns a delivery person from the company to pick
+up the order after it is confirmed by the restaurant. The delivery
+person then uses the map to reach the restaurant and waits for the food
+package. Once the food package is handed over to the delivery person,
+he/she confirms the pick-up in the app and travels to the customer's
+location to deliver the food. The delivery person confirms the drop-off
+in the app after delivering the food package to the customer. The
+customer can rate the order in the app. The food aggregator earns money
+by collecting a fixed margin of the delivery order from the
+restaurants.</p>
+<h3 id="objective">Objective</h3>
+<p>The food aggregator company has stored the data of the different
+orders made by the registered customers in their online portal. They
+want to analyze the data to get a fair idea about the demand of
+different restaurants which will help them in enhancing their customer
+experience. Suppose you are hired as a Data Scientist in this company
+and the Data Science team has shared some of the key questions that need
+to be answered. Perform the data analysis to find answers to these
+questions that will help the company to improve the business.</p>
+<h3 id="data-description">Data Description</h3>
+<p>The data contains the different data related to a food order. The
+detailed data dictionary is given below.</p>
+<h3 id="data-dictionary">Data Dictionary</h3>
+<ul>
+<li>order_id: Unique ID of the order</li>
+<li>customer_id: ID of the customer who ordered the food</li>
+<li>restaurant_name: Name of the restaurant</li>
+<li>cuisine_type: Cuisine ordered by the customer</li>
+<li>cost: Cost of the order</li>
+<li>day_of_the_week: Indicates whether the order is placed on a weekday
+or weekend (The weekday is from Monday to Friday and the weekend is
+Saturday and Sunday)</li>
+<li>rating: Rating given by the customer out of 5</li>
+<li>food_preparation_time: Time (in minutes) taken by the restaurant to
+prepare the food. This is calculated by taking the difference between
+the timestamps of the restaurant's order confirmation and the delivery
+person's pick-up confirmation.</li>
+<li>delivery_time: Time (in minutes) taken by the delivery person to
+deliver the food package. This is calculated by taking the difference
+between the timestamps of the delivery person's pick-up confirmation and
+drop-off information</li>
+</ul>
+</div>
+<section id="let-us-start-by-importing-the-required-libraries"
+class="cell markdown" id="cEtNUxNAJY_M">
+<h3>Let us start by importing the required libraries</h3>
+</section>
+<div class="cell code" data-execution_count="114" id="u6PlpJAPJY_N">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import libraries for data manipulation</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># import libraries for data visualization</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code></pre></div>
+</div>
+<section id="understanding-the-structure-of-the-data"
+class="cell markdown" id="AdracY0HJY_O">
+<h3>Understanding the structure of the data</h3>
+</section>
+<div class="cell code" data-execution_count="115"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:73}"
+id="WBh2ZGB9kFhU" data-outputId="d723ada2-a575-441a-aef9-d0b825b44a0e">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># importing files into google colab</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> google.colab <span class="im">import</span> files</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df1<span class="op">=</span>files.upload()</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>data<span class="op">=</span>df.copy()</span></code></pre></div>
+<div class="output display_data">
+
+     <input type="file" id="files-92f51b78-4407-4957-a074-d846118e1466" name="files[]" multiple disabled
+        style="border:none" />
+     <output id="result-92f51b78-4407-4957-a074-d846118e1466">
+      Upload widget is only available when the cell has been executed in the
+      current browser session. Please rerun this cell to enable.
+      </output>
+      <script>// Copyright 2017 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+/**
+ * @fileoverview Helpers for google.colab Python module.
+ */
+(function(scope) {
+function span(text, styleAttributes = {}) {
+  const element = document.createElement('span');
+  element.textContent = text;
+  for (const key of Object.keys(styleAttributes)) {
+    element.style[key] = styleAttributes[key];
+  }
+  return element;
+}
+
+// Max number of bytes which will be uploaded at a time.
+const MAX_PAYLOAD_SIZE = 100 * 1024;
+
+function _uploadFiles(inputId, outputId) {
+  const steps = uploadFilesStep(inputId, outputId);
+  const outputElement = document.getElementById(outputId);
+  // Cache steps on the outputElement to make it available for the next call
+  // to uploadFilesContinue from Python.
+  outputElement.steps = steps;
+
+  return _uploadFilesContinue(outputId);
+}
+
+// This is roughly an async generator (not supported in the browser yet),
+// where there are multiple asynchronous steps and the Python side is going
+// to poll for completion of each step.
+// This uses a Promise to block the python side on completion of each step,
+// then passes the result of the previous step as the input to the next step.
+function _uploadFilesContinue(outputId) {
+  const outputElement = document.getElementById(outputId);
+  const steps = outputElement.steps;
+
+  const next = steps.next(outputElement.lastPromiseValue);
+  return Promise.resolve(next.value.promise).then((value) => {
+    // Cache the last promise value to make it available to the next
+    // step of the generator.
+    outputElement.lastPromiseValue = value;
+    return next.value.response;
+  });
+}
+
+/**
+ * Generator function which is called between each async step of the upload
+ * process.
+ * @param {string} inputId Element ID of the input file picker element.
+ * @param {string} outputId Element ID of the output display.
+ * @return {!Iterable<!Object>} Iterable of next steps.
+ */
+function* uploadFilesStep(inputId, outputId) {
+  const inputElement = document.getElementById(inputId);
+  inputElement.disabled = false;
+
+  const outputElement = document.getElementById(outputId);
+  outputElement.innerHTML = '';
+
+  const pickedPromise = new Promise((resolve) => {
+    inputElement.addEventListener('change', (e) => {
+      resolve(e.target.files);
+    });
+  });
+
+  const cancel = document.createElement('button');
+  inputElement.parentElement.appendChild(cancel);
+  cancel.textContent = 'Cancel upload';
+  const cancelPromise = new Promise((resolve) => {
+    cancel.onclick = () => {
+      resolve(null);
+    };
+  });
+
+  // Wait for the user to pick the files.
+  const files = yield {
+    promise: Promise.race([pickedPromise, cancelPromise]),
+    response: {
+      action: 'starting',
+    }
+  };
+
+  cancel.remove();
+
+  // Disable the input element since further picks are not allowed.
+  inputElement.disabled = true;
+
+  if (!files) {
+    return {
+      response: {
+        action: 'complete',
+      }
+    };
+  }
+
+  for (const file of files) {
+    const li = document.createElement('li');
+    li.append(span(file.name, {fontWeight: 'bold'}));
+    li.append(span(
+        `(${file.type || 'n/a'}) - ${file.size} bytes, ` +
+        `last modified: ${
+            file.lastModifiedDate ? file.lastModifiedDate.toLocaleDateString() :
+                                    'n/a'} - `));
+    const percent = span('0% done');
+    li.appendChild(percent);
+
+    outputElement.appendChild(li);
+
+    const fileDataPromise = new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        resolve(e.target.result);
+      };
+      reader.readAsArrayBuffer(file);
+    });
+    // Wait for the data to be ready.
+    let fileData = yield {
+      promise: fileDataPromise,
+      response: {
+        action: 'continue',
+      }
+    };
+
+    // Use a chunked sending to avoid message size limits. See b/62115660.
+    let position = 0;
+    do {
+      const length = Math.min(fileData.byteLength - position, MAX_PAYLOAD_SIZE);
+      const chunk = new Uint8Array(fileData, position, length);
+      position += length;
+
+      const base64 = btoa(String.fromCharCode.apply(null, chunk));
+      yield {
+        response: {
+          action: 'append',
+          file: file.name,
+          data: base64,
+        },
+      };
+
+      let percentDone = fileData.byteLength === 0 ?
+          100 :
+          Math.round((position / fileData.byteLength) * 100);
+      percent.textContent = `${percentDone}% done`;
+
+    } while (position < fileData.byteLength);
+  }
+
+  // All done.
+  yield {
+    response: {
+      action: 'complete',
+    }
+  };
+}
+
+scope.google = scope.google || {};
+scope.google.colab = scope.google.colab || {};
+scope.google.colab._files = {
+  _uploadFiles,
+  _uploadFilesContinue,
+};
+})(self);
+</script> 
+</div>
+<div class="output stream stdout">
+<pre><code>Saving foodhub_order (6).csv to foodhub_order (6) (5).csv
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="116"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:278}"
+id="GF01IZDbJY_O" data-outputId="f52bcaf2-ce15-45ea-f192-5fdec9e5b5d6"
+data-scrolled="true">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># reading the data</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df<span class="op">=</span>pd.read_csv(<span class="st">&#39;foodhub_order (6).csv&#39;</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># returns the first 5 rows</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="116">
+
+  <div id="df-a0412a23-487e-402c-b05c-3f137226d0a8" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>order_id</th>
+      <th>customer_id</th>
+      <th>restaurant_name</th>
+      <th>cuisine_type</th>
+      <th>cost_of_the_order</th>
+      <th>day_of_the_week</th>
+      <th>rating</th>
+      <th>food_preparation_time</th>
+      <th>delivery_time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1477147</td>
+      <td>337525</td>
+      <td>Hangawi</td>
+      <td>Korean</td>
+      <td>30.75</td>
+      <td>Weekend</td>
+      <td>Not given</td>
+      <td>25</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1477685</td>
+      <td>358141</td>
+      <td>Blue Ribbon Sushi Izakaya</td>
+      <td>Japanese</td>
+      <td>12.08</td>
+      <td>Weekend</td>
+      <td>Not given</td>
+      <td>25</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1477070</td>
+      <td>66393</td>
+      <td>Cafe Habana</td>
+      <td>Mexican</td>
+      <td>12.23</td>
+      <td>Weekday</td>
+      <td>5</td>
+      <td>23</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1477334</td>
+      <td>106968</td>
+      <td>Blue Ribbon Fried Chicken</td>
+      <td>American</td>
+      <td>29.20</td>
+      <td>Weekend</td>
+      <td>3</td>
+      <td>25</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1478249</td>
+      <td>76942</td>
+      <td>Dirty Bird to Go</td>
+      <td>American</td>
+      <td>11.59</td>
+      <td>Weekday</td>
+      <td>4</td>
+      <td>25</td>
+      <td>24</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a0412a23-487e-402c-b05c-3f137226d0a8')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-a0412a23-487e-402c-b05c-3f137226d0a8 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-a0412a23-487e-402c-b05c-3f137226d0a8');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-35b2828b-cb2c-4930-9059-568e1128a828">
+  <button class="colab-df-quickchart" onclick="quickchart('df-35b2828b-cb2c-4930-9059-568e1128a828')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-35b2828b-cb2c-4930-9059-568e1128a828 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<section id="observations" class="cell markdown" id="J_Y9aJDJJY_P">
+<h4>Observations:</h4>
+<p>The DataFrame has 9 columns as mentioned in the Data Dictionary. Data
+in each row corresponds to the order placed by a customer.</p>
+</section>
+<section
+id="question-1-how-many-rows-and-columns-are-present-in-the-data-05-mark"
+class="cell markdown" id="c3kenV4vJY_Q">
+<h3><strong>Question 1:</strong> How many rows and columns are present
+in the data? [0.5 mark]</h3>
+</section>
+<div class="cell code" data-execution_count="117"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Yvz5i-PhJY_Q" data-outputId="95d7030e-16ca-46b5-9898-a290370156d4">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># looking shape of dataset</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="117">
+<pre><code>(1898, 9)</code></pre>
+</div>
+</div>
+<section id="observations" class="cell markdown" id="UsTNy3unJY_R">
+<h4>Observations:</h4>
+<ul>
+<li>There are 1898 rows and 9 columns.</li>
+</ul>
+</section>
+<section
+id="question-2-what-are-the-datatypes-of-the-different-columns-in-the-dataset-the-info-function-can-be-used-05-mark"
+class="cell markdown" id="jRXakVrUJY_R">
+<h3><strong>Question 2:</strong> What are the datatypes of the different
+columns in the dataset? (The info() function can be used) [0.5
+mark]</h3>
+</section>
+<div class="cell code" data-execution_count="118"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Kp70Z0BNJY_R" data-outputId="49944cbf-0854-44a2-f82d-be9b0b3bd28a">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#looking dataframe information</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 1898 entries, 0 to 1897
+Data columns (total 9 columns):
+ #   Column                 Non-Null Count  Dtype  
+---  ------                 --------------  -----  
+ 0   order_id               1898 non-null   int64  
+ 1   customer_id            1898 non-null   int64  
+ 2   restaurant_name        1898 non-null   object 
+ 3   cuisine_type           1898 non-null   object 
+ 4   cost_of_the_order      1898 non-null   float64
+ 5   day_of_the_week        1898 non-null   object 
+ 6   rating                 1898 non-null   object 
+ 7   food_preparation_time  1898 non-null   int64  
+ 8   delivery_time          1898 non-null   int64  
+dtypes: float64(1), int64(4), object(4)
+memory usage: 133.6+ KB
+</code></pre>
+</div>
+</div>
+<section id="observations" class="cell markdown" id="WJes5GP2JY_S">
+<h4>Observations:</h4>
+<ul>
+<li><p>Order id,customer id,food prepration time and delivery time is
+integer.</p></li>
+<li><p>rating should be integer but it shows an object.</p></li>
+<li><p>Day of the week,restaurant name and cuision type is
+object.</p></li>
+<li><p>Cost of the order is float.</p></li>
+</ul>
+</section>
+<section
+id="question-3-are-there-any-missing-values-in-the-data-if-yes-treat-them-using-an-appropriate-method-1-mark"
+class="cell markdown" id="pF_92MN6JY_S">
+<h3><strong>Question 3:</strong> Are there any missing values in the
+data? If yes, treat them using an appropriate method. [1 mark]</h3>
+</section>
+<div class="cell code" data-execution_count="119"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Zth-RR1PJY_S" data-outputId="ae89de94-6f4b-42e0-8e71-d5278a74aed0">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># checking missing values</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>df.isnull().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="119">
+<pre><code>order_id                 0
+customer_id              0
+restaurant_name          0
+cuisine_type             0
+cost_of_the_order        0
+day_of_the_week          0
+rating                   0
+food_preparation_time    0
+delivery_time            0
+dtype: int64</code></pre>
+</div>
+</div>
+<section id="observations" class="cell markdown" id="jDHT3vD1JY_S">
+<h4>Observations:</h4>
+<ul>
+<li>there are no missing values in rating column.</li>
+</ul>
+</section>
+<section
+id="question-4-check-the-statistical-summary-of-the-data-what-is-the-minimum-average-and-maximum-time-it-takes-for-food-to-be-prepared-once-an-order-is-placed-2-marks"
+class="cell markdown" id="MnJo7MWrJY_S">
+<h3><strong>Question 4:</strong> Check the statistical summary of the
+data. What is the minimum, average, and maximum time it takes for food
+to be prepared once an order is placed? [2 marks]</h3>
+</section>
+<div class="cell code" data-execution_count="120"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="WprQBgOSJY_T" data-outputId="cb8f1663-7816-45c5-b8aa-cc07ff01dbfb">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># checking static summery of the data set</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>df.describe().T</span></code></pre></div>
+<div class="output execute_result" data-execution_count="120">
+
+  <div id="df-0359d5cd-6c13-4ca6-bdf7-8fff102fb9fc" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>order_id</th>
+      <td>1898.0</td>
+      <td>1.477496e+06</td>
+      <td>548.049724</td>
+      <td>1476547.00</td>
+      <td>1477021.25</td>
+      <td>1477495.50</td>
+      <td>1.477970e+06</td>
+      <td>1478444.00</td>
+    </tr>
+    <tr>
+      <th>customer_id</th>
+      <td>1898.0</td>
+      <td>1.711685e+05</td>
+      <td>113698.139743</td>
+      <td>1311.00</td>
+      <td>77787.75</td>
+      <td>128600.00</td>
+      <td>2.705250e+05</td>
+      <td>405334.00</td>
+    </tr>
+    <tr>
+      <th>cost_of_the_order</th>
+      <td>1898.0</td>
+      <td>1.649885e+01</td>
+      <td>7.483812</td>
+      <td>4.47</td>
+      <td>12.08</td>
+      <td>14.14</td>
+      <td>2.229750e+01</td>
+      <td>35.41</td>
+    </tr>
+    <tr>
+      <th>food_preparation_time</th>
+      <td>1898.0</td>
+      <td>2.737197e+01</td>
+      <td>4.632481</td>
+      <td>20.00</td>
+      <td>23.00</td>
+      <td>27.00</td>
+      <td>3.100000e+01</td>
+      <td>35.00</td>
+    </tr>
+    <tr>
+      <th>delivery_time</th>
+      <td>1898.0</td>
+      <td>2.416175e+01</td>
+      <td>4.972637</td>
+      <td>15.00</td>
+      <td>20.00</td>
+      <td>25.00</td>
+      <td>2.800000e+01</td>
+      <td>33.00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-0359d5cd-6c13-4ca6-bdf7-8fff102fb9fc')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-0359d5cd-6c13-4ca6-bdf7-8fff102fb9fc button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-0359d5cd-6c13-4ca6-bdf7-8fff102fb9fc');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-2ac3a6f9-cee3-4d55-b343-a4e660e59199">
+  <button class="colab-df-quickchart" onclick="quickchart('df-2ac3a6f9-cee3-4d55-b343-a4e660e59199')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-2ac3a6f9-cee3-4d55-b343-a4e660e59199 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<section id="observations" class="cell markdown" id="9YbSOR5wJY_T">
+<h4>Observations</h4>
+<ul>
+<li>The average food preparation time is 27 minuates.</li>
+<li>The minimum food preparation time is 20 minuates.</li>
+<li>The maximum food preparation time is 35 minuates.</li>
+</ul>
+</section>
+<section id="question-5-how-many-orders-are-not-rated-1-mark"
+class="cell markdown" id="cw3l58z_JY_T">
+<h3><strong>Question 5:</strong> How many orders are not rated? [1
+mark]</h3>
+</section>
+<div class="cell code" data-execution_count="121"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="hEzDUL9wgksi" data-outputId="4b30b926-0d16-4374-eed4-ec6a3033ffcf">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking the unique values.</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&quot;rating&quot;</span>].unique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="121">
+<pre><code>array([&#39;Not given&#39;, &#39;5&#39;, &#39;3&#39;, &#39;4&#39;], dtype=object)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="122"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="FUGUL_5_7o1r" data-outputId="10007f24-2461-4ea3-ccae-355144824721">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking not given count</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>(df[<span class="st">&#39;rating&#39;</span>] <span class="op">==</span> <span class="st">&quot;Not given&quot;</span>).<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="122">
+<pre><code>736</code></pre>
+</div>
+</div>
+<section id="observations" class="cell markdown" id="5E0O_oviJY_T">
+<h4>Observations:</h4>
+<ol>
+<li>There are unique value "Not given".</li>
+<li>There are 736 people are not rated.</li>
+</ol>
+</section>
+<section id="exploratory-data-analysis-eda" class="cell markdown"
+id="7msIfXE-JY_T">
+<h3>Exploratory Data Analysis (EDA)</h3>
+</section>
+<section id="univariate-analysis" class="cell markdown"
+id="-2xfI28YJY_T">
+<h3>Univariate Analysis</h3>
+</section>
+<section
+id="question-6-explore-all-the-variables-and-provide-observations-on-their-distributions-generally-histograms-boxplots-countplots-etc-are-used-for-univariate-exploration-9-marks"
+class="cell markdown" id="0RHZnugBJY_U">
+<h3><strong>Question 6:</strong> Explore all the variables and provide
+observations on their distributions. (Generally, histograms, boxplots,
+countplots, etc. are used for univariate exploration.) [9 marks]</h3>
+</section>
+<div class="cell markdown" id="XHqHKX5JNJDt">
+<p>###Order id</p>
+</div>
+<div class="cell code" data-execution_count="123"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="2Rzpj6TrNW08" data-outputId="fe338efa-50a0-4527-e928-11621718d011">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking number of unique order id</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&quot;order_id&quot;</span>].nunique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="123">
+<pre><code>1898</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="xV-lxwK4NvnR">
+<p>####obserbations</p>
+<ul>
+<li>It seems like every order has different order id.</li>
+</ul>
+</div>
+<div class="cell markdown" id="AG4KJW9RKuaG">
+<p>###Customer id</p>
+</div>
+<div class="cell code" id="xoHFe2biLEnz">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># checking frequently buying customer</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>top_customers<span class="op">=</span>df[<span class="st">&#39;customer_id&#39;</span>].value_counts()</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="124"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="K_1Q0i3pIAIR" data-outputId="a4419dd5-f469-4be8-a245-c590b07ed243">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#top 5 customer id</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>top_customers.head(<span class="dv">5</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="124">
+<pre><code>52832     13
+47440     10
+83287      9
+250494     8
+259341     7
+Name: customer_id, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="9og1F2KbQXUg">
+<p>####Observation</p>
+<ul>
+<li>These are top customers :- 52832,47440,83287,250494,259341.</li>
+</ul>
+</div>
+<div class="cell markdown" id="MtcHDm0DLFpn">
+<p>###Restaurant name</p>
+</div>
+<div class="cell code" data-execution_count="125"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="HW4J_qKILRxG" data-outputId="79eef860-8918-4df3-d6b0-de65e9754b62">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># checking restaurant unique name</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;restaurant_name&#39;</span>].unique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="125">
+<pre><code>array([&#39;Hangawi&#39;, &#39;Blue Ribbon Sushi Izakaya&#39;, &#39;Cafe Habana&#39;,
+       &#39;Blue Ribbon Fried Chicken&#39;, &#39;Dirty Bird to Go&#39;,
+       &#39;Tamarind TriBeCa&#39;, &#39;The Meatball Shop&#39;, &#39;Barbounia&#39;,
+       &#39;Anjappar Chettinad&#39;, &#39;Bukhara Grill&#39;,
+       &#39;Big Wong Restaurant \x8c_¤¾Ñ¼&#39;, &#39;Empanada Mama (closed)&#39;, &#39;Pylos&#39;,
+       &quot;Lucky&#39;s Famous Burgers&quot;, &#39;Shake Shack&#39;, &#39;Sushi of Gari&#39;,
+       &#39;RedFarm Hudson&#39;, &#39;Blue Ribbon Sushi&#39;,
+       &#39;Five Guys Burgers and Fries&#39;, &#39;Tortaria&#39;, &#39;Cafe Mogador&#39;,
+       &#39;Otto Enoteca Pizzeria&#39;, &#39;Vezzo Thin Crust Pizza&#39;,
+       &#39;Sushi of Gari 46&#39;, &#39;The Kati Roll Company&#39;, &#39;Klong&#39;,
+       &#39;5 Napkin Burger&#39;, &#39;TAO&#39;, &#39;Parm&#39;, &#39;Sushi Samba&#39;,
+       &#39;Haru Gramercy Park&#39;, &#39;Chipotle Mexican Grill $1.99 Delivery&#39;,
+       &#39;RedFarm Broadway&#39;, &#39;Cafeteria&#39;, &#39;DuMont Burger&#39;,
+       &quot;Sarabeth&#39;s East&quot;, &#39;Hill Country Fried Chicken&#39;, &#39;Bistango&#39;,
+       &quot;Jack&#39;s Wife Freda&quot;, &quot;Mamoun&#39;s Falafel&quot;, &#39;Prosperity Dumpling&#39;,
+       &#39;Blue Ribbon Sushi Bar &amp; Grill&#39;, &#39;Westville Hudson&#39;,
+       &#39;Blue Ribbon Brooklyn&#39;, &#39;Nobu Next Door&#39;, &#39;Osteria Morini&#39;,
+       &#39;Haandi&#39;, &#39;Benihana&#39;, &#39;Han Dynasty&#39;, &#39;Chote Nawab&#39;,
+       &#39;Mission Cantina&#39;, &quot;Xi&#39;an Famous Foods&quot;, &#39;Rubirosa&#39;,
+       &quot;Joe&#39;s Shanghai \x8e_À\x8eü£¾÷´&quot;, &#39;Bareburger&#39;, &#39;The Odeon&#39;,
+       &#39;Pongsri Thai&#39;, &#39;Yama Japanese Restaurant&#39;, &#39;Momoya&#39;,
+       &#39;Balthazar Boulangerie&#39;, &#39;CafÌ© China&#39;, &#39;Boqueria&#39;,
+       &#39;Song Thai Restaurant &amp; Bar&#39;, &#39;Five Leaves&#39;,
+       &#39;Pinto Nouveau Thai Bistro&#39;, &quot;Amy Ruth&#39;s&quot;, &#39;Pepe Giallo&#39;,
+       &#39;indikitch&#39;, &#39;Yama 49&#39;, &#39;Piccolo Angolo&#39;, &#39;Pepe Rosso To Go&#39;,
+       &quot;L&#39;Express&quot;, &#39;Amma&#39;, &#39;Delicatessen&#39;, &quot;S&#39;MAC&quot;,
+       &quot;Vanessa&#39;s Dumplings&quot;, &#39;Bhatti Indian Grill&#39;, &#39;Taro Sushi&#39;,
+       &#39;Donburi-ya&#39;, &#39;Hatsuhana&#39;, &#39;Samurai Mama&#39;, &#39;Waverly Diner&#39;,
+       &#39;Tarallucci e Vino Restaurant&#39;, &quot;P.J. Clarke&#39;s&quot;,
+       &#39;Lantern Thai Kitchen&#39;, &#39;ilili Restaurant&#39;, &#39;The Smile&#39;,
+       &quot;Vanessa&#39;s Dumpling House&quot;, &quot;Bubby&#39;s &quot;, &#39;Woorijip&#39;,
+       &#39;Dirty Bird To Go (archived)&#39;, &#39;Haveli Indian Restaurant&#39;,
+       &#39;Dos Caminos&#39;, &#39;da Umberto&#39;, &#39;Sushi of Gari Tribeca&#39;,
+       &#39;Burger Joint&#39;, &#39;Room Service&#39;, &quot;Sarabeth&#39;s Restaurant&quot;,
+       &#39;Xe May Sandwich Shop&#39;, &#39;Hibino&#39;, &#39;Mira Sushi&#39;, &#39;Melt Shop&#39;,
+       &#39;J. G. Melon&#39;, &#39;Hummus Place&#39;, &#39;Saravanaa Bhavan&#39;,
+       &#39;Friend of a Farmer&#39;, &#39;The Loop&#39;, &#39;Balade&#39;, &#39;Posto&#39;,
+       &#39;Terakawa Ramen&#39;, &#39;Kambi Ramen House&#39;, &#39;Wo Hop Restaurant&#39;,
+       &#39;Spice Thai&#39;, &quot;Dickson&#39;s Farmstand Meats&quot;,
+       &#39;UVA Wine Bar &amp; Restaurant&#39;, &#39;Serafina Fabulous Pizza&#39;,
+       &#39;Gaia Italian Cafe&#39;, &#39;Chola Eclectic Indian Cuisine&#39;,
+       &#39;Hot Kitchen&#39;, &#39;Junoon&#39;, &#39;Ravagh Persian Grill&#39;, &#39;Rohm Thai&#39;,
+       &#39;Dig Inn Seasonal Market&#39;, &#39;Olea&#39;, &#39;Cho Dang Gol&#39;,
+       &#39;El Parador Cafe&#39;, &#39;Socarrat Paella Bar&#39;,
+       &quot;Don&#39;s Bogam BBQ &amp; Wine Bar&quot;, &#39;Alidoro&#39;, &quot;Tony&#39;s Di Napoli&quot;,
+       &#39;Cipriani Le Specialita&#39;, &#39;Sushi Choshi&#39;, &#39;Kanoyama&#39;, &#39;V-Nam Cafe&#39;,
+       &#39;Zero Otto Nove&#39;, &#39;Dos Caminos Soho&#39;, &#39;Go! Go! Curry!&#39;,
+       &#39;La Follia&#39;, &#39;Izakaya Ten&#39;, &#39;12 Chairs&#39;, &#39;Philippe Chow&#39;,
+       &#39;The MasalaWala&#39;, &#39;brgr&#39;, &quot;Carmine&#39;s&quot;, &#39;Asuka Sushi&#39;, &#39;Aurora&#39;,
+       &quot;Sarabeth&#39;s&quot;, &#39;Crema Restaurante&#39;, &quot;Big Daddy&#39;s&quot;,
+       &#39;Moonstruck on Second&#39;, &#39;Cafe de La Esquina&#39;, &#39;Olive Garden&#39;,
+       &#39;67 Burger&#39;, &#39;Tres Carnes&#39;, &quot;Schnipper&#39;s Quality Kitchen&quot;,
+       &#39;Nha Trang One&#39;, &#39;Market Table&#39;, &#39;Galli Restaurant&#39;,
+       &#39;Hampton Chutney Co.&#39;, &#39;Byblos Restaurant&#39;,
+       &#39;Grand Sichuan International&#39;, &#39;Le Grainne Cafe&#39;, &#39;Il Bambino&#39;,
+       &#39;Kori Restaurant and Bar&#39;, &#39;DespaÌ±a&#39;, &#39;Lamarca Pasta&#39;,
+       &#39;Lucky Strike&#39;, &quot;Paul &amp; Jimmy&#39;s&quot;, &#39;Hunan Manor&#39;, &quot;Coppola&#39;s East&quot;,
+       &#39;Emporio&#39;, &#39;Wa Jeal&#39;, &#39;Le Zie 2000 Trattoria&#39;, &#39;Rye House&#39;,
+       &quot;Hiroko&#39;s Place&quot;, &#39;Frank Restaurant&#39;, &quot;Sarabeth&#39;s West&quot;,
+       &quot;&#39;wichcraft&quot;], dtype=object)</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="-pCmg_9dTgNg" data-outputId="5a885342-57ce-44b0-85b6-bf70498549e2">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking top restaurant</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>top_restaurant<span class="op">=</span>df[<span class="st">&#39;restaurant_name&#39;</span>].value_counts()</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>top_restaurant.head(<span class="dv">5</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="58">
+<pre><code>Shake Shack                  219
+The Meatball Shop            132
+Blue Ribbon Sushi            119
+Blue Ribbon Fried Chicken     96
+Parm                          68
+Name: restaurant_name, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="gFLGn2_lUsul">
+<p>####observations</p>
+<ul>
+<li>There are top restaurant is:-shake shake,the meatball shop,blue
+ribbon sushi,blue ribbon fried chicken,parm.</li>
+</ul>
+</div>
+<div class="cell markdown" id="d7gQ__CFVu9P">
+<p>###Cuisine type</p>
+</div>
+<div class="cell code" data-execution_count="126"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Ia5Z7tzvLewq" data-outputId="d256cbad-febd-49cf-ae99-71f0389271e8">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Checking top cuisine type</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>top_cusine_type<span class="op">=</span>df[<span class="st">&#39;cuisine_type&#39;</span>].value_counts()</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>result<span class="op">=</span>top_cusine_type.head(<span class="dv">15</span>)</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>result</span></code></pre></div>
+<div class="output execute_result" data-execution_count="126">
+<pre><code>American          584
+Japanese          470
+Italian           298
+Chinese           215
+Mexican            77
+Indian             73
+Middle Eastern     49
+Mediterranean      46
+Thai               19
+French             18
+Southern           17
+Korean             13
+Spanish            12
+Vietnamese          7
+Name: cuisine_type, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:403}"
+id="LCcMXqTnNbV2" data-outputId="e4d0922c-6d60-47bd-ec32-1a731dd350e5">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize <span class="op">=</span> (<span class="dv">15</span>,<span class="dv">5</span>))</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> df, x <span class="op">=</span> <span class="st">&#39;cuisine_type&#39;</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/f99ddc34f19683f07331e2c273aa2ba52240b4a6.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="uAJszSRWYjpO">
+<p>####observations</p>
+<ul>
+<li>American is top cuisine type it has taken 584 orders.</li>
+<li>Japanese has taken 470 orders.</li>
+<li>Chinise and italian is the average Cusine type.</li>
+<li>Vietnamese has minimum cusine type it has taken only 7 orders.</li>
+</ul>
+</div>
+<div class="cell markdown" id="ZplT7pBTLfvD">
+<p>###Cost of the order</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="PA1EEwBsb3Ce" data-outputId="2ef47571-43ea-4940-fb55-8d552edcadf9">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">#looking the cost of the order</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&quot;cost_of_the_order&quot;</span>].describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="61">
+<pre><code>count    1898.000000
+mean       16.498851
+std         7.483812
+min         4.470000
+25%        12.080000
+50%        14.140000
+75%        22.297500
+max        35.410000
+Name: cost_of_the_order, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="127"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:506}"
+id="8IxlKvSbLp1L" data-outputId="20324595-7adb-4817-b630-29799f73f5f3">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co">#looking the distribution of order cost</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>sns.displot(data<span class="op">=</span>df,x<span class="op">=</span><span class="st">&#39;cost_of_the_order&#39;</span>,color<span class="op">=</span><span class="st">&quot;r&quot;</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/2857daebbd7c2c66532141895a571ced54181f62.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:450}"
+id="mv-ZCxMvdSPB" data-outputId="03bb2b63-2eed-437a-c0a7-af965c79a060">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co">#looking outliers of data</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>sns.boxplot(data<span class="op">=</span>df,x<span class="op">=</span><span class="st">&#39;cost_of_the_order&#39;</span>,color<span class="op">=</span><span class="st">&quot;y&quot;</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/c0d63567d9e4af5fb1349a3c93b3a323e8b0f980.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="-lwMt55PeDGT">
+<p>####Observations</p>
+<ul>
+<li>There is no outliers are in cost of the order.</li>
+<li>Average cost of the order is 16 dollar.</li>
+<li>Minimum price of the order is 4 dollar.</li>
+<li>Maximum price of the order is 35 dollar.</li>
+<li>25% price of the order is 12 dollar.</li>
+<li>50% price of the order is 14 dollar.</li>
+<li>75% price of the order is 22 dollar.</li>
+</ul>
+</div>
+<div class="cell markdown" id="3ifW-EuBLqs5">
+<p>####Day of the week</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="La59KZvvL3lS" data-outputId="c471df24-0679-4a7b-b8c8-99d43c525568">
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># checking the unique values</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;day_of_the_week&#39;</span>].unique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="64">
+<pre><code>array([&#39;Weekend&#39;, &#39;Weekday&#39;], dtype=object)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="128"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:450}"
+id="lyXPbikGNrqb" data-outputId="a94b6c54-9d22-47c6-d182-2e8528d8f220">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">#looking the day of the week order placed</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> df, x <span class="op">=</span> <span class="st">&#39;day_of_the_week&#39;</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/9a88e8656f68b9f1d0d0d94f893e2979970381c8.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="L0__rj0RhJFh">
+<p>####observations</p>
+<ul>
+<li>There are two unique day of the week is <strong>Weekday</strong> and
+<strong>Weekend</strong>.</li>
+<li>Mostely customer are placed order on weekend(saturday,sunday).</li>
+</ul>
+</div>
+<div class="cell markdown" id="5TpU61QdL4TD">
+<p>###Rating</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="G8Frk0gKMISu" data-outputId="1762054d-6252-4235-b2b1-7617d5f71748">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking unique values</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&quot;rating&quot;</span>].unique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="66">
+<pre><code>array([&#39;Not given&#39;, &#39;5&#39;, &#39;3&#39;, &#39;4&#39;], dtype=object)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="130"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="QwsUkAZmjbx6" data-outputId="16aaa367-2cb3-4d7f-ecd0-584e5d9bb743">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking how many customers not rated</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>(df[<span class="st">&quot;rating&quot;</span>]<span class="op">==</span><span class="st">&quot;Not given&quot;</span>).<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="130">
+<pre><code>736</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="129"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:449}"
+id="Cp-LP7VqN16v" data-outputId="13a27d34-3338-4e88-f320-da068d7f1854">
+<div class="sourceCode" id="cb39"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> df, x <span class="op">=</span> <span class="st">&#39;rating&#39;</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/00ece626d4ead0f2645db6ec8e86199a4680f86d.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="EOmkBy3zjEwX">
+<p>####Observations</p>
+<ol>
+<li>There are 736 customers is skip the rating.</li>
+<li>Mostly customer is rating 5 star.</li>
+</ol>
+</div>
+<div class="cell markdown" id="d-p6sNzUMI6R">
+<p>####Food preparation time</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="02MHww9ilbIi" data-outputId="70aee836-581d-4de7-bf8d-3f0be49b0bfe">
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co">#looking the detail of the food preparing time</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;food_preparation_time&#39;</span>].describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="69">
+<pre><code>count    1898.000000
+mean       27.371970
+std         4.632481
+min        20.000000
+25%        23.000000
+50%        27.000000
+75%        31.000000
+max        35.000000
+Name: food_preparation_time, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="131"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:506}"
+id="IS8wzjovMUXl" data-outputId="c9447144-f4d3-4e28-bc6b-f52f55e6c75f">
+<div class="sourceCode" id="cb42"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking distribution of time for food preparing</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>sns.displot(data<span class="op">=</span>df,x<span class="op">=</span><span class="st">&#39;food_preparation_time&#39;</span>,color<span class="op">=</span><span class="st">&quot;g&quot;</span>,bins<span class="op">=</span><span class="dv">10</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/71fe1da89055d452e96b0987e7c33919ce7c28c8.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:450}"
+id="mh5LZdhcmvp1" data-outputId="c5fa4d22-02af-46de-98ac-7802a89b7c1e">
+<div class="sourceCode" id="cb43"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking outliers of time for preparing food</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>sns.boxplot(data<span class="op">=</span>df,x<span class="op">=</span><span class="st">&#39;food_preparation_time&#39;</span>,color<span class="op">=</span><span class="st">&quot;violet&quot;</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/6a5d4ce8480192cb322eb436bb1e1f916ca45b56.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="Rg0V-rajm3JG">
+<p>####observations</p>
+<ul>
+<li>Average food prepration time is 27 minuates.</li>
+<li>Maximum food prepration time is 35 minuates.</li>
+<li>Minimum food prepration time is 20 minuates.</li>
+<li>25% order of the food prepration time is 23 minuates.</li>
+<li>50% order of the food prepration time is 27 minuates.</li>
+<li>75% order of the food prepration time is 31 minuates.</li>
+</ul>
+</div>
+<div class="cell markdown" id="9RCdtCyQMV95">
+<p>####Delivery time</p>
+</div>
+<div class="cell code" data-execution_count="132"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="v_fgfH36pNBK" data-outputId="ecc87247-b259-4d9a-9d0d-27070995968d">
+<div class="sourceCode" id="cb44"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">#looking delivery time detail</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&quot;delivery_time&quot;</span>].describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="132">
+<pre><code>count    1898.000000
+mean       24.161749
+std         4.972637
+min        15.000000
+25%        20.000000
+50%        25.000000
+75%        28.000000
+max        33.000000
+Name: delivery_time, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:506}"
+id="o9c7VLimMgDp" data-outputId="7be2ac3a-48a3-4206-eb68-4dfe41102416">
+<div class="sourceCode" id="cb46"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">#looking distribution of delivery time</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>sns.displot(df,x<span class="op">=</span><span class="st">&#39;delivery_time&#39;</span>,color<span class="op">=</span><span class="st">&quot;r&quot;</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/ca893203e07ac92bdf910fa746ecdbe929d459f7.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:450}"
+id="SL22QEpSpzL8" data-outputId="e8e48d1a-6e82-491b-f9ad-be8bfb5e98a8">
+<div class="sourceCode" id="cb47"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co">#looking outliers of the delivery time</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>sns.boxplot(data<span class="op">=</span>df,x<span class="op">=</span><span class="st">&#39;delivery_time&#39;</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/6602370ad65a2cabcbab3cd5a5cb9f35a2708c95.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="QrhYsMesqZh8">
+<p>####Observations</p>
+<ul>
+<li>Average delivery time is 24 minuates.</li>
+<li>Minimum delivery time is 15 minuates.</li>
+<li>Maximum delivery time is 33 minuates.</li>
+<li>25% order has delivery time is 20 minuates.</li>
+<li>50% order has delivery time is 25 minuates.</li>
+<li>75% order has delivery time is 28 minuates.</li>
+</ul>
+</div>
+<section
+id="question-7-which-are-the-top-5-restaurants-in-terms-of-the-number-of-orders-received-1-mark"
+class="cell markdown" id="K9CqA5H_JY_U">
+<h3><strong>Question 7</strong>: Which are the top 5 restaurants in
+terms of the number of orders received? [1 mark]</h3>
+</section>
+<div class="cell code" data-execution_count="133" id="PaJZ3wlOJY_U">
+<div class="sourceCode" id="cb48"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking top restaurant</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>top_restaurant<span class="op">=</span>df[<span class="st">&quot;restaurant_name&quot;</span>].value_counts()</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="134"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="CbG_tsqxeS8s" data-outputId="c33583af-e3ee-43fb-a0b4-8a8e07dbeea9">
+<div class="sourceCode" id="cb49"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co">#top 5 restaurant</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>top_restaurant.head(<span class="dv">5</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="134">
+<pre><code>Shake Shack                  219
+The Meatball Shop            132
+Blue Ribbon Sushi            119
+Blue Ribbon Fried Chicken     96
+Parm                          68
+Name: restaurant_name, dtype: int64</code></pre>
+</div>
+</div>
+<section id="observations" class="cell markdown" id="tnjhWgUfJY_U">
+<h4>Observations:</h4>
+<ul>
+<li>Shake Shack, The Meatball Shop, Blue Ribbon Sushi, Blue Ribbon Fried
+Chicken and Parm is the top 5 restaurant in terms of the number of
+orders received.</li>
+</ul>
+</section>
+<section
+id="question-8-which-is-the-most-popular-cuisine-on-weekends-1-mark"
+class="cell markdown" id="gWPMqGq0JY_U">
+<h3><strong>Question 8</strong>: Which is the most popular cuisine on
+weekends? [1 mark]</h3>
+</section>
+<div class="cell code" data-execution_count="135"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="c-Xnus3VJY_U" data-outputId="07ba2299-28a9-4dbd-de31-da1f6a37913f">
+<div class="sourceCode" id="cb51"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># checking how many order on weekend</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>df_weekend <span class="op">=</span> df[df[<span class="st">&#39;day_of_the_week&#39;</span>] <span class="op">==</span> <span class="st">&#39;Weekend&#39;</span>]</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="co"># checking the most popular cuisine on weekends</span></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>most_popular_cuisine <span class="op">=</span> df_weekend[<span class="st">&#39;cuisine_type&#39;</span>].value_counts()</span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a><span class="co">#displaying</span></span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;The most popular cuisine on weekends is:&quot;</span>, most_popular_cuisine)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>The most popular cuisine on weekends is: American          415
+Japanese          335
+Italian           207
+Chinese           163
+Mexican            53
+Indian             49
+Mediterranean      32
+Middle Eastern     32
+Thai               15
+French             13
+Korean             11
+Southern           11
+Spanish            11
+Vietnamese          4
+Name: cuisine_type, dtype: int64
+</code></pre>
+</div>
+</div>
+<section id="observations" class="cell markdown" id="bpQ270TUJY_U">
+<h4>Observations:</h4>
+<ul>
+<li>the most popular cuisine on weekend is American, Japanese,Italian,
+Chinese, Mexican.</li>
+</ul>
+</section>
+<section
+id="question-9-what-percentage-of-the-orders-cost-more-than-20-dollars-2-marks"
+class="cell markdown" id="88xgTqkxJY_U">
+<h3><strong>Question 9</strong>: What percentage of the orders cost more
+than 20 dollars? [2 marks]</h3>
+</section>
+<div class="cell code" data-execution_count="136"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="rpZkP6vXIdY_" data-outputId="65021ee0-2ea8-4352-c2bf-66cce85f3785">
+<div class="sourceCode" id="cb53"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># checking orders that cost above 20 dollars</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>df_greater_than_20 <span class="op">=</span> df[df[<span class="st">&#39;cost_of_the_order&#39;</span>] <span class="op">&gt;</span> <span class="dv">20</span>]</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculating the number of total orders where the cost is above 20 dollars</span></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>cost_orders_above_20 <span class="op">=</span> <span class="bu">len</span>(df_greater_than_20)</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;The number of total orders that cost above 20 dollars is: </span><span class="sc">{</span>cost_orders_above_20<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculating percentage of such orders in the dataset</span></span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a>percentage_above_20 <span class="op">=</span> (cost_orders_above_20 <span class="op">/</span> <span class="bu">len</span>(df)) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;Percentage of orders above 20 dollars: </span><span class="sc">{</span><span class="bu">round</span>(percentage_above_20, <span class="dv">2</span>)<span class="sc">}</span><span class="ss">%&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>The number of total orders that cost above 20 dollars is: 555
+Percentage of orders above 20 dollars: 29.24%
+</code></pre>
+</div>
+</div>
+<section id="observations" class="cell markdown" id="77KNAC5zJY_U">
+<h4>Observations:</h4>
+<ul>
+<li>The number of total orders that cost above 20 dollars is 555.</li>
+<li>Percentage of orders above 20 dollars 29.24%</li>
+</ul>
+</section>
+<section id="question-10-what-is-the-mean-order-delivery-time-1-mark"
+class="cell markdown" id="HFyHn7hsJY_V">
+<h3><strong>Question 10</strong>: What is the mean order delivery time?
+[1 mark]</h3>
+</section>
+<div class="cell code" data-execution_count="138"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="cyFL13hNJY_V" data-outputId="96ad0310-9f10-4b9b-e93f-b88cd6071325">
+<div class="sourceCode" id="cb55"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculating the mean delivery time</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>mdt<span class="op">=</span> df[<span class="st">&#39;delivery_time&#39;</span>].mean()</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;The mean order delivery time is&#39;</span>, mdt, <span class="st">&#39;minutes&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>The mean order delivery time is 24.161749209694417 minutes
+</code></pre>
+</div>
+</div>
+<section id="observations" class="cell markdown" id="F35SRV-HJY_V">
+<h4>Observations:</h4>
+<ul>
+<li>The mean order delivery time is around 24 minutes.</li>
+</ul>
+</section>
+<section
+id="question-11-the-company-has-decided-to-give-20-discount-vouchers-to-the-top-3-most-frequent-customers-find-the-ids-of-these-customers-and-the-number-of-orders-they-placed-1-mark"
+class="cell markdown" id="48IjaOuDJY_V">
+<h3><strong>Question 11:</strong> The company has decided to give 20%
+discount vouchers to the top 3 most frequent customers. Find the IDs of
+these customers and the number of orders they placed. [1 mark]</h3>
+</section>
+<div class="cell code" data-execution_count="140"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Hz8-DE4Zge0j" data-outputId="0e18ee99-3b1a-4114-ef4d-33b09c8845bb">
+<div class="sourceCode" id="cb57"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking top 3 customer id</span></span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>customer_orders <span class="op">=</span> df[<span class="st">&#39;customer_id&#39;</span>].value_counts()</span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>customer_orders.head(<span class="dv">3</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="140">
+<pre><code>52832    13
+47440    10
+83287     9
+Name: customer_id, dtype: int64</code></pre>
+</div>
+</div>
+<section id="observations" class="cell markdown" id="9tWVwfX6JY_V">
+<h4>Observations:</h4>
+<ul>
+<li>customer id (52832) has been placed 13 orders.</li>
+<li>customer id (47440) has been placed 10 orders.</li>
+<li>customer id (83287) has been placed 9 orders.</li>
+</ul>
+</section>
+<section id="multivariate-analysis" class="cell markdown"
+id="AfIc2jPaJY_V">
+<h3>Multivariate Analysis</h3>
+</section>
+<section
+id="question-12-perform-a-multivariate-analysis-to-explore-relationships-between-the-important-variables-in-the-dataset-it-is-a-good-idea-to-explore-relations-between-numerical-variables-as-well-as-relations-between-numerical-and-categorical-variables-10-marks"
+class="cell markdown" id="iqiS0RT_JY_V">
+<h3><strong>Question 12</strong>: Perform a multivariate analysis to
+explore relationships between the important variables in the dataset.
+(It is a good idea to explore relations between numerical variables as
+well as relations between numerical and categorical variables) [10
+marks]</h3>
+</section>
+<div class="cell markdown" id="upGIf2KlCHvN">
+<p>###Cuisine type and cost of the order</p>
+</div>
+<div class="cell code" data-execution_count="141"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="vCy9KBDiU49Y" data-outputId="6c5452a7-aa44-4890-8cfd-5dac2bb51279">
+<div class="sourceCode" id="cb59"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co">#top orders receiving customers</span></span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&quot;cuisine_type&quot;</span>].value_counts()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="141">
+<pre><code>American          584
+Japanese          470
+Italian           298
+Chinese           215
+Mexican            77
+Indian             73
+Middle Eastern     49
+Mediterranean      46
+Thai               19
+French             18
+Southern           17
+Korean             13
+Spanish            12
+Vietnamese          7
+Name: cuisine_type, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="142"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="PKZvs2I8VTth" data-outputId="e5529528-6284-4d1b-844a-a3df0fc4ca0e">
+<div class="sourceCode" id="cb61"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Order recieved according to cost</span></span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&quot;cost_of_the_order&quot;</span>].value_counts().head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="142">
+<pre><code>12.18    86
+12.13    82
+12.23    47
+24.20    42
+29.10    37
+24.25    36
+12.08    36
+24.30    35
+14.07    32
+29.15    30
+Name: cost_of_the_order, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="02B9nUPpV2Rj" data-outputId="24a59f82-abb4-4849-e3e9-f4d510bb15e6">
+<div class="sourceCode" id="cb63"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="co">#average cost of the order</span></span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&quot;cost_of_the_order&quot;</span>].mean()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="83">
+<pre><code>16.498851422550054</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="143"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:539}"
+id="oG5IY57iwtyM" data-outputId="ebfd86f2-e8e7-45f0-a22e-28bce356d0b8">
+<div class="sourceCode" id="cb65"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking the cost of the order according to cuisine type</span></span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>sns.lineplot(df,x<span class="op">=</span><span class="st">&quot;cuisine_type&quot;</span>, y<span class="op">=</span><span class="st">&quot;cost_of_the_order&quot;</span>,color<span class="op">=</span><span class="st">&quot;y&quot;</span>)</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">90</span>)</span>
+<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/7327ab22abfb033bc21f06140eaf60dbd340f679.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="SBRuoXkGC6p_">
+<p>####Observations</p>
+<ul>
+<li>middle eastern,Thai,southern,French is most expensive cuisine
+type.</li>
+<li>American,Japanese,Chinese,Italian are the top restaurant in term of
+order taking.</li>
+</ul>
+</div>
+<div class="cell markdown" id="M80RjQ_vAskT">
+<p>##Cuisine vs delivery time</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="j-y6j5C8A4WH" data-outputId="eafa336e-7633-4391-c32a-c5d00f00bb2a">
+<div class="sourceCode" id="cb66"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Relationship between cost of the order and cuisine type</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">5</span>))</span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a>palette <span class="op">=</span> <span class="st">&quot;viridis&quot;</span></span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a>sns.boxplot(df,x <span class="op">=</span> <span class="st">&quot;cuisine_type&quot;</span>, y <span class="op">=</span> <span class="st">&quot;delivery_time&quot;</span>, palette <span class="op">=</span> <span class="st">&quot;viridis&quot;</span>)</span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation <span class="op">=</span> <span class="dv">60</span>)</span>
+<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/4529e00bb1ffa79301affc1cc70f0d3c5c27190e.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="5hgU6Of-AWXF">
+<p>##Cuisine vs Food Preparation time</p>
+</div>
+<div class="cell code" data-execution_count="144"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:630}"
+id="zHo_ER_DZ6ni" data-outputId="2adb9529-1bfa-40ec-d631-0fb20218f633">
+<div class="sourceCode" id="cb67"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">7</span>))</span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>sns.violinplot(x<span class="op">=</span><span class="st">&quot;cuisine_type&quot;</span>, y<span class="op">=</span><span class="st">&quot;food_preparation_time&quot;</span>, data<span class="op">=</span>df, palette<span class="op">=</span><span class="st">&#39;ocean&#39;</span>)</span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">60</span>)</span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Distribution of cuision and food preparation time&#39;</span>)</span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/afbe31175b5a2c5640e09a2caabd4af6ffafbd71.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="ACmwTgwp2QAt">
+<p>####Observation:</p>
+<ul>
+<li>Thai,southern,French,Spanish cuision type take more time to prepare
+food.</li>
+</ul>
+</div>
+<div class="cell markdown" id="ewP8Zs5wA71o">
+<p>##Day of the Week vs Delivery time</p>
+</div>
+<div class="cell code" data-execution_count="145"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:465}"
+id="c5g8yscOBENG" data-outputId="a87aa9f1-a329-4541-c75d-140e291811d8">
+<div class="sourceCode" id="cb68"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Relationship between day of the week and delivery time</span></span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">5</span>))</span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>sns.boxplot(df,x<span class="op">=</span><span class="st">&#39;delivery_time&#39;</span>,y<span class="op">=</span><span class="st">&quot;day_of_the_week&quot;</span>)  <span class="co">## Complete the code to visualize the relationship between day of the week and delivery time using boxplot</span></span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/b5950f6a52bbfc5f320257ae2534741de78f005f.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="zFMvMiBE0m6z">
+<p>####Observation:</p>
+<ul>
+<li>weekend take less time to deliver.</li>
+<li>weekday take more time to deliver.</li>
+</ul>
+</div>
+<div class="cell markdown" id="YVURJqznbTvw">
+<p>###Restaurant Name vs cost of the order</p>
+</div>
+<div class="cell code" data-execution_count="147"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="eA-_6u2QBMbr" data-outputId="71cbf221-0db7-4a98-d000-4c5fc7b6a9af">
+<div class="sourceCode" id="cb69"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking total cost according to the resturant name</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>df.groupby([<span class="st">&#39;restaurant_name&#39;</span>])[<span class="st">&#39;cost_of_the_order&#39;</span>].<span class="bu">sum</span>().sort_values(ascending <span class="op">=</span> <span class="va">False</span>).head(<span class="dv">15</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="147">
+<pre><code>restaurant_name
+Shake Shack                      3579.53
+The Meatball Shop                2145.21
+Blue Ribbon Sushi                1903.95
+Blue Ribbon Fried Chicken        1662.29
+Parm                             1112.76
+RedFarm Broadway                  965.13
+RedFarm Hudson                    921.21
+TAO                               834.50
+Han Dynasty                       755.29
+Blue Ribbon Sushi Bar &amp; Grill     666.62
+Rubirosa                          660.45
+Sushi of Gari 46                  640.87
+Nobu Next Door                    623.67
+Five Guys Burgers and Fries       506.47
+Momoya                            492.13
+Name: cost_of_the_order, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="H08TQHT8BRL7">
+<p>##Rating vs Delivery time</p>
+</div>
+<div class="cell code" data-execution_count="148"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:530}"
+id="uPBKOK1lBZSS" data-outputId="c341ac1a-b1f7-4d5e-8b67-0aaec799bedc">
+<div class="sourceCode" id="cb71"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Relationship between rating and delivery time</span></span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">7</span>))</span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a>sns.lineplot(df,x <span class="op">=</span> <span class="st">&#39;rating&#39;</span>, y <span class="op">=</span> <span class="st">&#39;delivery_time&#39;</span>)</span>
+<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/0e09f32733a87f13dfa53aad11e6d84c963290b0.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="WHwbjJDCdDp9">
+<p>####Observation:</p>
+<ul>
+<li>If delivery time increase rating decrease.</li>
+</ul>
+</div>
+<div class="cell markdown" id="uk5FpDt1BaVU">
+<p>##Rating vs Food preparation time</p>
+</div>
+<div class="cell code" data-execution_count="149"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:732}"
+id="mFaxrXm1Bfn0" data-outputId="6f36d935-fb8b-46f8-977a-91452e3528a6">
+<div class="sourceCode" id="cb72"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Relationship between rating and food preparation time</span></span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">10</span>))</span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>sns.lineplot(df,x<span class="op">=</span><span class="st">&quot;rating&quot;</span>,y<span class="op">=</span><span class="st">&quot;food_preparation_time&quot;</span>,marker<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/6337991d95c0cf1127aaa33e0926a2018ddcca32.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="ycCSYqaefcDI">
+<p>####Observation:</p>
+<ul>
+<li>If food preparation time increase rating decreased.</li>
+</ul>
+</div>
+<div class="cell markdown" id="5DDkP3SoBoCK">
+<p>##Rating vs Cost of the order</p>
+</div>
+<div class="cell code" data-execution_count="150"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:696}"
+id="spiWAzywBrMU" data-outputId="accfef9d-7e36-42ec-c7a5-e033b57585fd">
+<div class="sourceCode" id="cb73"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Relationship between rating and cost of the order</span></span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">8</span>))</span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a>sns.lineplot(df,x<span class="op">=</span><span class="st">&#39;rating&#39;</span>,y<span class="op">=</span><span class="st">&quot;cost_of_the_order&quot;</span>)</span>
+<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/f3980017bfa59a028fe0161d47cc52dcfd48be87.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="6i5WqbKWhr0E">
+<p>####Observations:</p>
+<ul>
+<li>If cost of the order increases rating increases.</li>
+</ul>
+</div>
+<div class="cell markdown" id="tPCzQFGoBxxd">
+<p>##Correlation with variables</p>
+</div>
+<div class="cell code" data-execution_count="151"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:795}"
+id="9-TuulduBzjp" data-outputId="bdf3f1ef-65d1-4269-c83f-38ee21238e3d">
+<div class="sourceCode" id="cb74"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the heatmap</span></span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a>num_list <span class="op">=</span> [<span class="st">&#39;cost_of_the_order&#39;</span>, <span class="st">&#39;food_preparation_time&#39;</span>, <span class="st">&#39;delivery_time&#39;</span>]</span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">10</span>))</span>
+<span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a>sns.heatmap(df[num_list].corr(), annot<span class="op">=</span><span class="va">True</span>, vmin<span class="op">=-</span><span class="dv">1</span>, vmax<span class="op">=</span><span class="dv">1</span>, cmap<span class="op">=</span><span class="st">&quot;viridis&quot;</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_e643bbfd2d1f467687dc368a396d0da2/9324858d41fe304536cebfc5ecc4e63ac83aaa6f.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="U6a9veHNrS_m">
+<p>####Observations:</p>
+<ul>
+<li>There is corelation between cost of the order and food preparation
+time.</li>
+</ul>
+</div>
+<section
+id="question-13-the-company-wants-to-provide-a-promotional-offer-in-the-advertisement-of-the-restaurants-the-condition-to-get-the-offer-is-that-the-restaurants-must-have-a-rating-count-of-more-than-50-and-the-average-rating-should-be-greater-than-4-find-the-restaurants-fulfilling-the-criteria-to-get-the-promotional-offer-3-marks"
+class="cell markdown" id="YLkMf09YJY_V">
+<h3><strong>Question 13:</strong> The company wants to provide a
+promotional offer in the advertisement of the restaurants. The condition
+to get the offer is that the restaurants must have a rating count of
+more than 50 and the average rating should be greater than 4. Find the
+restaurants fulfilling the criteria to get the promotional offer. [3
+marks]</h3>
+</section>
+<div class="cell code" data-execution_count="153"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="nWTT4H5cut6-" data-outputId="70c32b38-c65c-4613-8ee6-6ddd61d25f24">
+<div class="sourceCode" id="cb75"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Converting rating column to numeric, replacing &quot;Not given&quot; with NaN</span></span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&quot;rating&quot;</span>] <span class="op">=</span> pd.to_numeric(df[<span class="st">&quot;rating&quot;</span>],errors<span class="op">=</span><span class="st">&#39;coerce&#39;</span>)</span>
+<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb75-4"><a href="#cb75-4" aria-hidden="true" tabindex="-1"></a><span class="co"># checking restaurants based on conditions</span></span>
+<span id="cb75-5"><a href="#cb75-5" aria-hidden="true" tabindex="-1"></a>filtered_restaurants <span class="op">=</span> df.groupby(<span class="st">&quot;restaurant_name&quot;</span>).agg(</span>
+<span id="cb75-6"><a href="#cb75-6" aria-hidden="true" tabindex="-1"></a>    rating_count<span class="op">=</span>(<span class="st">&#39;rating&#39;</span>, <span class="st">&#39;count&#39;</span>),</span>
+<span id="cb75-7"><a href="#cb75-7" aria-hidden="true" tabindex="-1"></a>    average_rating<span class="op">=</span>(<span class="st">&#39;rating&#39;</span>, <span class="st">&#39;mean&#39;</span>)</span>
+<span id="cb75-8"><a href="#cb75-8" aria-hidden="true" tabindex="-1"></a>).reset_index()</span>
+<span id="cb75-9"><a href="#cb75-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb75-10"><a href="#cb75-10" aria-hidden="true" tabindex="-1"></a>eligible_restaurants <span class="op">=</span> filtered_restaurants[</span>
+<span id="cb75-11"><a href="#cb75-11" aria-hidden="true" tabindex="-1"></a>    (filtered_restaurants[<span class="st">&#39;rating_count&#39;</span>] <span class="op">&gt;</span> <span class="dv">50</span>) <span class="op">&amp;</span> (filtered_restaurants[<span class="st">&#39;average_rating&#39;</span>] <span class="op">&gt;</span> <span class="dv">4</span>)</span>
+<span id="cb75-12"><a href="#cb75-12" aria-hidden="true" tabindex="-1"></a>].reset_index()</span>
+<span id="cb75-13"><a href="#cb75-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb75-14"><a href="#cb75-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Displaying</span></span>
+<span id="cb75-15"><a href="#cb75-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;The eligible restaurants is:&quot;</span>,eligible_restaurants)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>The eligible restaurants is:    index            restaurant_name  rating_count  average_rating
+0     20  Blue Ribbon Fried Chicken            64        4.328125
+1     21          Blue Ribbon Sushi            73        4.219178
+2    136                Shake Shack           133        4.278195
+3    153          The Meatball Shop            84        4.511905
+</code></pre>
+</div>
+</div>
+<section id="observations" class="cell markdown" id="10uryUMhJY_V">
+<h4>Observations:</h4>
+<ul>
+<li>There are four eligible Restaurant.</li>
+<li>Blue Ribbon Fried Chicken rating counts is 64 and rating is
+4.32</li>
+<li>Blue Ribbon Sushi rating counts is 73 and its rating is 4.21</li>
+<li>Shake Shack rating counts is 133 its rating is 4.27</li>
+<li>The Meatball Shop rating counts is 84 its rating is 4.51</li>
+</ul>
+</section>
+<section
+id="question-14-the-company-charges-the-restaurant-25-on-the-orders-having-cost-greater-than-20-dollars-and-15-on-the-orders-having-cost-greater-than-5-dollars-find-the-net-revenue-generated-by-the-company-across-all-orders-3-marks"
+class="cell markdown" id="1gvWBkRUJY_V">
+<h3><strong>Question 14:</strong> The company charges the restaurant 25%
+on the orders having cost greater than 20 dollars and 15% on the orders
+having cost greater than 5 dollars. Find the net revenue generated by
+the company across all orders. [3 marks]</h3>
+</section>
+<div class="cell code" data-execution_count="154"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="1nBAuA2wkvtT" data-outputId="ae35dc90-9795-449c-f080-022164c091eb">
+<div class="sourceCode" id="cb77"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculating revenue for orders &gt;20 dollar with a 25% charge</span></span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>revenue_gt_20 <span class="op">=</span> df[df[<span class="st">&quot;cost_of_the_order&quot;</span>] <span class="op">&gt;</span> <span class="dv">20</span>][<span class="st">&quot;cost_of_the_order&quot;</span>] <span class="op">*</span> <span class="fl">0.25</span></span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculating revenue for orders between $5 and $20 with a 15% charge</span></span>
+<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a>revenue_between_5_and_20 <span class="op">=</span> df[(df[<span class="st">&quot;cost_of_the_order&quot;</span>] <span class="op">&gt;</span> <span class="dv">5</span>) <span class="op">&amp;</span> (df[<span class="st">&quot;cost_of_the_order&quot;</span>] <span class="op">&lt;=</span> <span class="dv">20</span>)][<span class="st">&quot;cost_of_the_order&quot;</span>] <span class="op">*</span> <span class="fl">0.15</span></span>
+<span id="cb77-6"><a href="#cb77-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-7"><a href="#cb77-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Sum up the revenues</span></span>
+<span id="cb77-8"><a href="#cb77-8" aria-hidden="true" tabindex="-1"></a>net_revenue <span class="op">=</span> revenue_gt_20.<span class="bu">sum</span>() <span class="op">+</span> revenue_between_5_and_20.<span class="bu">sum</span>()</span>
+<span id="cb77-9"><a href="#cb77-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;the net revenue generated by the company across all orders is&quot;</span>,net_revenue,<span class="st">&quot;dollar&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>the net revenue generated by the company across all orders is 6166.303 dollar
+</code></pre>
+</div>
+</div>
+<section id="observations" class="cell markdown" id="XHCEJgH0JY_W">
+<h4>Observations:</h4>
+<ul>
+<li>the net revenue generated by the company across all orders is around
+6166 dollar.</li>
+</ul>
+</section>
+<section
+id="question-15-the-company-wants-to-analyze-the-total-time-required-to-deliver-the-food-what-percentage-of-orders-take-more-than-60-minutes-to-get-delivered-from-the-time-the-order-is-placed-the-food-has-to-be-prepared-and-then-delivered-2-marks"
+class="cell markdown" id="pRlVW-oeJY_W">
+<h3><strong>Question 15:</strong> The company wants to analyze the total
+time required to deliver the food. What percentage of orders take more
+than 60 minutes to get delivered from the time the order is placed? (The
+food has to be prepared and then delivered.) [2 marks]</h3>
+</section>
+<div class="cell code" data-execution_count="155"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="69ldfQsehqg8" data-outputId="c35172da-44b6-4a8e-97c4-d0eebdda5799">
+<div class="sourceCode" id="cb79"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;total_delivery_time&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;food_preparation_time&#39;</span>] <span class="op">+</span> df[<span class="st">&#39;delivery_time&#39;</span>]</span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;total_delivery_time&#39;</span>].describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="155">
+<pre><code>count    1898.000000
+mean       51.533720
+std         6.833603
+min        35.000000
+25%        47.000000
+50%        52.000000
+75%        56.000000
+max        68.000000
+Name: total_delivery_time, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="157"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="gAxGm4gdZxyW" data-outputId="d50143b9-2772-4013-ddbd-0b5f65365620">
+<div class="sourceCode" id="cb81"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculating the total delivery time for every order</span></span>
+<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;total_delivery_time&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;food_preparation_time&#39;</span>] <span class="op">+</span> df[<span class="st">&#39;delivery_time&#39;</span>]</span>
+<span id="cb81-3"><a href="#cb81-3" aria-hidden="true" tabindex="-1"></a><span class="co"># checking orders that take more then 60 minutes to be delivered</span></span>
+<span id="cb81-4"><a href="#cb81-4" aria-hidden="true" tabindex="-1"></a>total_delivery_time <span class="op">=</span> df[df[<span class="st">&#39;total_delivery_time&#39;</span>] <span class="op">&gt;</span><span class="dv">60</span>]</span>
+<span id="cb81-5"><a href="#cb81-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculating the percentage of orders that took more than 60 minutes</span></span>
+<span id="cb81-6"><a href="#cb81-6" aria-hidden="true" tabindex="-1"></a>percentage_long_delivery <span class="op">=</span> (<span class="bu">len</span>(total_delivery_time) <span class="op">/</span> <span class="bu">len</span>(df)) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb81-7"><a href="#cb81-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-8"><a href="#cb81-8" aria-hidden="true" tabindex="-1"></a><span class="co"># showing</span></span>
+<span id="cb81-9"><a href="#cb81-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;The percentage of orders taking more than 60 minutes for delivery is&quot;</span>,percentage_long_delivery,<span class="st">&quot;%&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>The percentage of orders taking more than 60 minutes for delivery is 10.537407797681771 %
+</code></pre>
+</div>
+</div>
+<section id="observations" class="cell markdown" id="iqzBXn2yJY_W">
+<h4>Observations:</h4>
+<ul>
+<li>Total time percentage of orders taking more than 60 minutes for
+delivery is around 10.5 %</li>
+<li>Average total delivery time of order is 51 minutes.</li>
+<li>Min. total delivery time of order is 35 minutes.</li>
+<li>Max. total delivery time of order is 68 minutes.</li>
+</ul>
+</section>
+<section
+id="question-16-the-company-wants-to-analyze-the-delivery-time-of-the-orders-on-weekdays-and-weekends-how-does-the-mean-delivery-time-vary-during-weekdays-and-weekends-2-marks"
+class="cell markdown" id="bUd6cYpPJY_W">
+<h3><strong>Question 16:</strong> The company wants to analyze the
+delivery time of the orders on weekdays and weekends. How does the mean
+delivery time vary during weekdays and weekends? [2 marks]</h3>
+</section>
+<div class="cell code" data-execution_count="158"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="yhTqxNsM99Vt" data-outputId="a79b8bac-64e3-4840-ea39-176c30c2e5cf">
+<div class="sourceCode" id="cb83"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking weekday and weekend mean delivary time</span></span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>weekday<span class="op">=</span>df[df[<span class="st">&#39;day_of_the_week&#39;</span>] <span class="op">==</span> <span class="st">&#39;Weekday&#39;</span>]</span>
+<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a>delivery_time<span class="op">=</span>[<span class="st">&quot;delivery_time&quot;</span>]</span>
+<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a>weekend<span class="op">=</span>df[df[<span class="st">&#39;day_of_the_week&#39;</span>] <span class="op">==</span> <span class="st">&#39;Weekend&#39;</span>]</span>
+<span id="cb83-5"><a href="#cb83-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;weekend mean&quot;</span>,weekend[delivery_time].mean())</span>
+<span id="cb83-6"><a href="#cb83-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;weekday mean&quot;</span>,weekday[delivery_time].mean())</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>weekend mean delivery_time    22.470022
+dtype: float64
+weekday mean delivery_time    28.340037
+dtype: float64
+</code></pre>
+</div>
+</div>
+<section id="observations" class="cell markdown" id="8H-ODxbVJY_W">
+<h4>Observations:</h4>
+<ul>
+<li>The weekday mean time is around 28 minutes.</li>
+<li>The weekend mean time is around 22 minutes.</li>
+</ul>
+</section>
+<section id="conclusion-and-recommendations" class="cell markdown"
+id="17roJywaJY_W">
+<h3>Conclusion and Recommendations</h3>
+</section>
+<section
+id="question-17-what-are-your-conclusions-from-the-analysis-what-recommendations-would-you-like-to-share-to-help-improve-the-business-you-can-use-cuisine-type-and-feedback-ratings-to-drive-your-business-recommendations-6-marks"
+class="cell markdown" id="ZdX2Wz4FJY_W">
+<h3><strong>Question 17:</strong> What are your conclusions from the
+analysis? What recommendations would you like to share to help improve
+the business? (You can use cuisine type and feedback ratings to drive
+your business recommendations.) [6 marks]</h3>
+</section>
+<section id="conclusions" class="cell markdown" id="VTugVsL4Ddz-">
+<h3>Conclusions:</h3>
+<ul>
+<li><p><strong>Popular Restaurants and Cuisines:</strong></p></li>
+<li><p>The top five restaurants in terms of orders are Shake Shack,The
+Meatball Shop, Blue Ribbon Sushi, Blue Ribbon Fried Chicken, and
+Parm.</p></li>
+<li><p>American cuisine is the most popular, with 584 orders, followed
+by Japanese with 470 orders.</p></li>
+<li><p>Consider enhancing the offerings in these popular cuisines, and
+possibly promoting them to attract more customers.</p></li>
+<li><p><strong>Order Cost Analysis:</strong></p></li>
+<li><p>There is a variation in order costs, with an average of 16
+dollars.</p></li>
+<li><p>The majority of orders fall between 4 and 35 dollars.</p></li>
+<li><p>29.24% of orders have a cost above 20 dollars.</p></li>
+<li><p>Consider introducing promotions or discounts for orders above a
+certain amount to increase average order value.</p></li>
+<li><p><strong>Day of the Week Analysis:</strong></p></li>
+<li><p>Most orders are placed on weekends, particularly on Saturday and
+Sunday.</p></li>
+<li><p>Consider running special promotions or offers during weekdays to
+encourage more orders on those days.</p></li>
+<li><p><strong>Food Preparation and Delivery Times:</strong></p></li>
+<li><p>The average food preparation time is 27 minutes, with a range
+between 20 and 35 minutes.</p></li>
+<li><p>The average delivery time is 24 minutes, with a range between 15
+and 33 minutes.</p></li>
+<li><p>Ensure efficient communication and coordination between
+restaurants and delivery personnel to maintain timely delivery.</p></li>
+<li><p><strong>Customer Ratings:</strong></p></li>
+<li><p>Four restaurants are eligible for promotional offers based on
+rating counts and average ratings.</p></li>
+<li><p>Consider promoting these restaurants to attract more
+customers.</p></li>
+<li><p><strong>Revenue and Time Analysis:</strong></p></li>
+<li><p>The net revenue generated by the company is around 6166
+dollars.</p></li>
+<li><p>Around 10.5% of orders take more than 60 minutes for
+delivery.</p></li>
+<li><p>The average total delivery time is 51 minutes. Consider
+optimizing delivery routes and processes to reduce delivery
+times.</p></li>
+</ul>
+</section>
+<section id="recommendations" class="cell markdown" id="PWnsI0i_guWJ">
+<h3>Recommendations:</h3>
+<ul>
+<li><p>Introduce promotions or discounts for orders above a certain
+amount to increase order values.</p></li>
+<li><p>Collaborate with popular restaurants to enhance their offerings
+and attract more customers.</p></li>
+<li><p>Implement special promotions or offers during weekdays to balance
+order distribution throughout the week.</p></li>
+<li><p>Continuously monitor and optimize food preparation and delivery
+times to improve overall customer satisfaction.</p></li>
+<li><p>Consider expanding the range of cuisines offered based on
+popularity.</p></li>
+<li><p>Leverage positive customer ratings to promote eligible
+restaurants and attract more customers.</p></li>
+<li><p>Leverage positive customer ratings to promote eligible
+restaurants and attract more customers.</p></li>
+</ul>
+</section>
+<div class="cell markdown" id="tSoucKKbg9Hc">
+<hr />
+</div>
+</body>
+</html>
